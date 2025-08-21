@@ -56,13 +56,13 @@ function loadTOC(){
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-en.v3.html"); 
-      $("#introduction").load("sections/introduction-en.v3.html"); 
+      $("#abstract").load("sections/abstract-en.v4.html"); 
+      $("#introduction").load("sections/introduction-en.v4.html"); 
       $("#nstable").load("sections/ns-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
+      $("#overview").load("sections/overview-en.html?v=4"); 
+      $("#description").load("sections/description-en.html?v=4"); 
       $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+      $("#crossref").load("sections/crossref-en.html?v=4", null, loadHash); 
     });
     </script> 
   </head> 
@@ -96,6 +96,7 @@ function loadTOC(){
 </div>     <h2>Abstract</h2>
 <div id="abstract"></div>
 <div id="toc"></div>     <h2>Introduction</h2>
+<h2>Introduction</h2>
 <div id="introduction"></div>
 	  <div id="nstable"></div>
      <div id="overview"></div>
